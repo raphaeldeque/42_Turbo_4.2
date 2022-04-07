@@ -10,11 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_atoi(char *str)
+int	ft_atoi(char *str)
 {
-	int i;
-	int nb;
-	int neg_nb;
+	int	i;
+	int	nb;
+	int	neg_nb;
 
 	i = 0;
 	nb = 0;
@@ -30,7 +30,7 @@ int ft_atoi(char *str)
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		nb = nb * 10;
-		nb = nb + str[i] - '0';
+		nb = nb + (str[i] - '0');
 		i++;
 	}
 	if (neg_nb % 2 == 1)
