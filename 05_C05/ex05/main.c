@@ -8,7 +8,7 @@ int	main(void)
 	i = -4;
 	while (++i <= 10)
 	{
-		// if (ft_sqrt(i) > 0)
+		if (ft_sqrt(i) > 0)
 			printf("%d: %d\n",i,ft_sqrt(i));
 	}
 	// printf("%d", ft_sqrt(2147483647));

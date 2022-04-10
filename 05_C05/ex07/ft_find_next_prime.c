@@ -6,7 +6,7 @@
 /*   By: rmoura-r <rmoura-r@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/09 02:20:57 by rmoura-r          #+#    #+#             */
-/*   Updated: 2022/04/09 02:21:00 by rmoura-r         ###   ########.fr       */
+/*   Updated: 2022/04/11 01:09:22 by rmoura-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_is_prime(int nb)
 	if (nb <= 1)
 		return (0);
 	i = 2;
-	while (i < nb)
+	while (i < nb/i)
 	{
 		if (nb % i == 0)
 			return (0);

@@ -1,6 +1,5 @@
 #include <stdio.h>
 int	ft_fibonacci(int index);
-int	queijo(int index);
 
 int	main(void)
 {

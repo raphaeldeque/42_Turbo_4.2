@@ -5,7 +5,7 @@ int	main(void)
 {
 	int i;
 
-	i = 5;
+	i = 8;
 	while (i-- > -4)
 		printf("nb: %d  fact= %d\n",i,ft_recursive_factorial(i));
 	return (0);
