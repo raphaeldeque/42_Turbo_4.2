@@ -1,24 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   match.c                                            :+:      :+:    :+:   */
+/*   ft_print_program_name.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmoura-r <rmoura-r@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/11 01:14:08 by rmoura-r          #+#    #+#             */
-/*   Updated: 2022/04/11 01:14:08 by rmoura-r         ###   ########.fr       */
+/*   Created: 2022/04/11 23:41:06 by rmoura-r          #+#    #+#             */
+/*   Updated: 2022/04/11 23:41:09 by rmoura-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	match(char *s1, char *s2)
+#include <unistd.h>
+
+void	ft_putstr(char *str)
 {
-	if (*s1 && *s2 == '*')
-		return (match(s1 + 1, s2) || match(s1, s2 + 1));
-	if (*s1 == 0 && *s2 == '*')
-		return (match(s1, s2 + 1));
-	if (*s1 == 0 && *s2 == 0)
-		return (1);
-	if (*s1 == *s2)
-		return (match(s1 + 1, s2 + 1));
-	return (0);
+	while (*str)
+		write(1, str++, 1);
+}
+
+int	main(int argc, char **argv)
+{
+	if (argc)
+	{
+		ft_putstr(argv[0]);
+		ft_putstr("\n");
+	}
 }

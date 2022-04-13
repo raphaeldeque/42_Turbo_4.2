@@ -1,9 +1,9 @@
-#include <stdio.h>
 int	ft_is_prime(int nb);
 
 int	main(void)
 {
-	int i;
+	i#include <stdio.h>
+nt i;
 
 	i = -7;
 	while (++i <= 150)
