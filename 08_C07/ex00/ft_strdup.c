@@ -17,7 +17,7 @@ char	*ft_strdup(char *src)
 	char	*dup;
 
 	dup = malloc(sizeof(src));
-	if (dup == NULL)
+	if (!dup)
 		return (NULL);
 	dup = src;
 	return (dup);
