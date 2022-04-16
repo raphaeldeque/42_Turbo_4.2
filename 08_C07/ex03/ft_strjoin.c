@@ -57,12 +57,12 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	while (++i < size - 1)
 	{
 		ft_strcpy(joint, strs[i]);
-		joint = joint + ft_strlen(strs[i]);
+		joint = joint + ft_strlen(strs[i]) + 1;
 		ft_strcpy(joint, sep);
-		joint = joint + ft_strlen(sep);
+		joint = joint + ft_strlen(sep) + 1;
 	}
 	ft_strcpy(joint, strs[size - 1]);
-	joint = joint + ft_strlen(strs[size -1]);
+	joint = joint + ft_strlen(strs[size -1]) + 1;
 	*joint = '\0';
 	return (ft_strdup(joint));
 }
