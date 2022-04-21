@@ -1,8 +1,4 @@
-void	ft_putchar(char c);
-void	ft_swap(int *a, int *b);
-void	ft_putstr(char *str);
-int		ft_strlen(char *str);
-int		ft_strcmp(char *s1, char *s2);
+#include "includes/ft.h"
 #include <stdio.h>
 
 int	main(void)
@@ -23,4 +19,8 @@ int	main(void)
 	ft_swap(len1, len2);
 	printf("len1: %i\nlen2: %i\n", *len1, *len2);
 	printf("strcmp: %i\n", ft_strcmp(str1, str2));
+	printf("testando\n");
+	return (0);
 }
+
+// gcc -Wall -Wextra -Werror main.c -L. -lft
